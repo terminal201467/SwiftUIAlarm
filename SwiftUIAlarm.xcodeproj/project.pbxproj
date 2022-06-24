@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		16CF5CE6286431D900CFFC41 /* SwiftUIAlarmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF5CE5286431D900CFFC41 /* SwiftUIAlarmApp.swift */; };
-		16CF5CE8286431D900CFFC41 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF5CE7286431D900CFFC41 /* ContentView.swift */; };
+		16CF5CE8286431D900CFFC41 /* AlarmListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF5CE7286431D900CFFC41 /* AlarmListView.swift */; };
 		16CF5CEA286431DC00CFFC41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16CF5CE9286431DC00CFFC41 /* Assets.xcassets */; };
 		16CF5CED286431DC00CFFC41 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16CF5CEC286431DC00CFFC41 /* Preview Assets.xcassets */; };
 		16CF5CF7286431DD00CFFC41 /* SwiftUIAlarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF5CF6286431DD00CFFC41 /* SwiftUIAlarmTests.swift */; };
 		16CF5D01286431DD00CFFC41 /* SwiftUIAlarmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF5D00286431DD00CFFC41 /* SwiftUIAlarmUITests.swift */; };
 		16CF5D03286431DD00CFFC41 /* SwiftUIAlarmUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF5D02286431DD00CFFC41 /* SwiftUIAlarmUITestsLaunchTests.swift */; };
+		16CF5D1028643BF400CFFC41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF5D0F28643BF300CFFC41 /* SceneDelegate.swift */; };
+		16CF5D1228643DA600CFFC41 /* AlarmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF5D1128643DA500CFFC41 /* AlarmData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		16CF5CE2286431D900CFFC41 /* SwiftUIAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16CF5CE5286431D900CFFC41 /* SwiftUIAlarmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAlarmApp.swift; sourceTree = "<group>"; };
-		16CF5CE7286431D900CFFC41 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		16CF5CE7286431D900CFFC41 /* AlarmListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListView.swift; sourceTree = "<group>"; };
 		16CF5CE9286431DC00CFFC41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16CF5CEC286431DC00CFFC41 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		16CF5CF2286431DD00CFFC41 /* SwiftUIAlarmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIAlarmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +46,8 @@
 		16CF5CFC286431DD00CFFC41 /* SwiftUIAlarmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIAlarmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16CF5D00286431DD00CFFC41 /* SwiftUIAlarmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAlarmUITests.swift; sourceTree = "<group>"; };
 		16CF5D02286431DD00CFFC41 /* SwiftUIAlarmUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAlarmUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		16CF5D0F28643BF300CFFC41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		16CF5D1128643DA500CFFC41 /* AlarmData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +99,10 @@
 			isa = PBXGroup;
 			children = (
 				16CF5CE5286431D900CFFC41 /* SwiftUIAlarmApp.swift */,
-				16CF5CE7286431D900CFFC41 /* ContentView.swift */,
+				16CF5CE7286431D900CFFC41 /* AlarmListView.swift */,
 				16CF5CE9286431DC00CFFC41 /* Assets.xcassets */,
+				16CF5D0F28643BF300CFFC41 /* SceneDelegate.swift */,
+				16CF5D1128643DA500CFFC41 /* AlarmData.swift */,
 				16CF5CEB286431DC00CFFC41 /* Preview Content */,
 			);
 			path = SwiftUIAlarm;
@@ -257,8 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16CF5CE8286431D900CFFC41 /* ContentView.swift in Sources */,
+				16CF5CE8286431D900CFFC41 /* AlarmListView.swift in Sources */,
+				16CF5D1228643DA600CFFC41 /* AlarmData.swift in Sources */,
 				16CF5CE6286431D900CFFC41 /* SwiftUIAlarmApp.swift in Sources */,
+				16CF5D1028643BF400CFFC41 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
